@@ -1,0 +1,17 @@
+Author: Matthew Jaojoco
+
+pageRank.py stores the implementation for my pageRank algorithm. It takes in either 
+epsilon or iterations depending on the format of the file that stores the graph.
+It returns the pageRank of each node in the graph in descending order, 
+as well as the number of iterations and the time it took to 
+    1. construct the graph and 2. calculate pageRank
+
+usage: python3 pageRank.py <filename> <iterations/epsilon> <small/snap>
+    <small/snap> is a string that represents the format of the data. 
+    <iterations/epsilon> is an integer/float representing the corresponding variable
+        iterations is used for small formatted data
+        epsilon is used for snap formatted data
+
+note: the algorithm always attempts the snap format if anything other than 
+    "small" is provided for the final argument
+    
